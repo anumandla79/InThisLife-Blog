@@ -161,7 +161,7 @@
               $usersQuery=mysqli_query($connection,$query);
               $totalUsers=mysqli_num_rows($usersQuery);
               
-              $query="SELECT * FROM posts";
+              $query="SELECT * FROM posts where post_status='published'";
               $postsQuery=mysqli_query($connection,$query);
               $totalPosts=mysqli_num_rows($postsQuery);
               
