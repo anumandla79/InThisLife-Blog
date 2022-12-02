@@ -29,7 +29,7 @@
                <small><?php echo $post_category?></small>
         </h1>
              <?php
-                   $query="SELECT * FROM posts WHERE post_category='$post_category'";
+                   $query="SELECT * FROM posts WHERE post_status='published' and post_category='$post_category'";
           $page_query=mysqli_query($connection,$query);
           if(!$page_query){
               die("Query Failed.".mysqli_error($connection));

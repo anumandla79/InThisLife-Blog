@@ -27,7 +27,7 @@
                <small><?php echo $post_author;?></small>
         </h1>
              <?php
-              $query="SELECT * FROM posts WHERE post_author='$post_author'";
+              $query="SELECT * FROM posts WHERE post_status='published'and post_author='$post_author'";
               $query=mysqli_query($connection,$query);
               if(!$query){
                   die("Query Failed.".mysqli_error($connection));

@@ -13,11 +13,11 @@ ht
   <!-- Page Content -->
  
 
-                    <div class="container h-75 col-sm-7  ">
-                     <div class="post-card shadow-lg mt-4">
+                    <div class="container col-sm-7  ">
+                     <div class="post-card shadow-lg">
                          <div class="post-card-header text-center pt-3" style="font-family:'Zilla'"><h2><strong>In THis LiFe</strong></h2></div>
                          <div class="card-body">
-                         <h5 style="font-family:'Zilla'" class="p-5">This blog is created to give as much exuberance as possible in ones Life. It envolves explaning various great beings life aspects. Exploring places that enables one to study ancient culture, tradition, Architecture, History and science involving in it. 
+                         <h5 style="font-family:'Zilla'" class="p-5">This blog has the content that shows the distant, forgotten & most importantly glorious heritage of Ancient Bharat. It envolves explaning various great beings life aspects. Exploring places that enables one to know about ancient culture, tradition, Architecture, History and science involving in it. 
                          </h5>
                          
                           </div>

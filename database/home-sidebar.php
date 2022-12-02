@@ -29,7 +29,7 @@
               <div class="input-group">
               <input type="password" name="password" class="form-control" placeholder="password">
               <span class="input-group-btn">
-                <button class="btn btn-primary" name="login" type="submit">Go!</button>
+                <button class="btn btn-primary" name="login" type="submit">login</button>
               </span>
             </div>
           </div>
@@ -52,6 +52,7 @@
               <input name="search" type="text" class="form-control" placeholder="Search for...">
               <span class="input-group-btn">
                 <button class="btn btn-primary" name="submit" type="submit"><span class="fa fa-search"></span></button>
+<!--                <span class="fa fa-search"></span>-->
               </span>
             </div>
           </div>
@@ -98,7 +99,7 @@
           </div>
         </div>
         <!--- most viewed posts -->
-        <div class="post-card my-4 p-3" style="background-color:#e8e8e8">
+        <div class="post-card my-4 p-3">
           <h5 class="post-card-header">Most Popular</h5>
           <div class="post-card-body">
             <div class="row">
@@ -108,7 +109,7 @@
                    <?php
                       include "dbConnect.php";
                       global $connection;
-                      $query="SELECT * FROM posts ORDER BY post_views DESC";
+                      $query="SELECT * FROM posts where post_status='published' ORDER BY post_views DESC";
                       $query=mysqli_query($connection,$query);
                       if(!$query){
                           die("Query Failed.".mysqli_error($connection));

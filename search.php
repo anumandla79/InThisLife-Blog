@@ -24,7 +24,7 @@
              
              $search=escape($_POST['search']);
             
-             $query="SELECT * FROM posts WHERE post_tags LIKE '%$search%' ";
+             $query="SELECT * FROM posts WHERE post_status='published' and post_tags LIKE '%$search%' ";
              $query=mysqli_query($connection,$query);
             if(!$query){
                 die("Query Failed.".mysqli_error($connection));

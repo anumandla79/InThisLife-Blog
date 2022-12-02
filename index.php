@@ -24,7 +24,7 @@
         <h1 class="text-center p-2  bg-dark text-white  "><small>What's New</small></h1>
     
          <?php
-          $query="SELECT * FROM posts";
+          $query="SELECT * FROM posts where post_status ='published'";
           $page_query=mysqli_query($connection,$query);
           if(!$page_query){
               die("Query Failed.".mysqli_error($connection));
@@ -45,7 +45,7 @@
           
           
              
-              $query="SELECT * FROM posts ORDER BY post_id DESC LIMIT $page,$per_page";
+              $query="SELECT * FROM posts where post_status ='published' ORDER BY post_id DESC LIMIT $page,$per_page";
               $query=mysqli_query($connection,$query);
               if(!$query){
                   die("Query Failed.".mysqli_error($connection));
